@@ -37,10 +37,10 @@ class _homeState extends State<home> {
             child: Container(
                 height: 60,
                 child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       MaterialButton(
-                        minWidth: 50,
+                        minWidth: 35,
                         onPressed: () {
                           setState(() {
                             CurrentScreen = BookApp();
@@ -50,14 +50,14 @@ class _homeState extends State<home> {
                         child: Column(
                           children: <Widget>[
                             Icon(FontAwesomeIcons.stethoscope,
-                                size: 25,
+                                size: 20,
                                 color: currentTab == 0
                                     ? Colors.blueAccent
                                     : Colors.grey),
                             SizedBox(height: 5),
                             Text("Book Appointment",
                                 style: TextStyle(
-                                    fontSize: 12,
+                                    fontSize: 10,
                                     color: currentTab == 0
                                         ? Colors.blueAccent
                                         : Colors.grey))
@@ -65,7 +65,7 @@ class _homeState extends State<home> {
                         ),
                       ),
                       MaterialButton(
-                        minWidth: 60,
+                        minWidth: 40,
                         onPressed: () {
                           setState(() {
                             CurrentScreen = MyAppointment();
@@ -75,14 +75,14 @@ class _homeState extends State<home> {
                         child: Column(
                           children: <Widget>[
                             Icon(FontAwesomeIcons.calendarAlt,
-                                size: 25,
+                                size: 20,
                                 color: currentTab == 1
                                     ? Colors.blueAccent
                                     : Colors.grey),
                             SizedBox(height: 5),
                             Text("My Appointments",
                                 style: TextStyle(
-                                    fontSize: 12,
+                                    fontSize: 10,
                                     color: currentTab == 1
                                         ? Colors.blueAccent
                                         : Colors.grey))
@@ -90,7 +90,7 @@ class _homeState extends State<home> {
                         ),
                       ),
                       MaterialButton(
-                        minWidth: 60,
+                        minWidth: 40,
                         onPressed: () {
                           setState(() {
                             CurrentScreen = medRecord();
@@ -100,14 +100,14 @@ class _homeState extends State<home> {
                         child: Column(
                           children: <Widget>[
                             Icon(FontAwesomeIcons.fileMedical,
-                                size: 25,
+                                size: 20,
                                 color: currentTab == 2
                                     ? Colors.blueAccent
                                     : Colors.grey),
                             SizedBox(height: 5),
                             Text("Medical Records",
                                 style: TextStyle(
-                                    fontSize: 12,
+                                    fontSize: 10,
                                     color: currentTab == 2
                                         ? Colors.blueAccent
                                         : Colors.grey))

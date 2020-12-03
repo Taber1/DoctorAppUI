@@ -370,7 +370,7 @@ class drawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: Text(    
+            title: Text(
               'My Profiles',
               style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
             ),
@@ -470,12 +470,14 @@ class acard extends StatelessWidget {
                   ),
                 ),
                 SizedBox(width: 10),
-                Text(name,
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 12,
-                      fontWeight: FontWeight.bold,
-                    )),
+                Flexible(
+                  child: Text(name,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                      )),
+                ),
               ],
             ),
           ),
